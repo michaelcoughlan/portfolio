@@ -1,0 +1,38 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: #4D5057;
+    margin: 0;
+}
+
+.portfolio__container {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar {
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+}
+
+.navbar .underline {
+    height: 0.188rem;
+    width: 0;
+    background-color: #8b1e3f;
+    -webkit-animation: progressBar 3s forwards;
+    animation: progressBar 3s forwards;
+}
+
+.highlight {
+    color: #8B1E3F;
+}
+
+.portfolio__heading {
+    display: inline;
+    border-bottom: 0.188rem solid #8b1e3f;
+}

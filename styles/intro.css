@@ -1,0 +1,53 @@
+.portfolio__bio {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+
+    opacity: 0;
+    -webkit-animation: popIn 1s forwards;
+    animation: popIn 1s forwards;
+}
+
+.portfolio__bio .portfolio__bio-introduction h1 {
+    margin: 0 auto;
+}
+
+.portfolio__bio .portfolio__bio-introduction p {
+    margin-bottom: 0;
+}
+
+.portfolio__profile-picture {
+    height: 9.375rem;
+    width: 9.375rem;
+
+    border-radius: 25%;
+    margin-right: 2rem;
+}
+
+.portfolio__contact-information {
+    margin-top: 2rem;
+    opacity: 0;
+    -webkit-animation: popIn 1s forwards;
+    animation: popIn 1s forwards;
+    animation-delay: 0.25s;
+}
+
+.portfolio__contact-information div {
+    margin-top: 2rem;
+}
+
+.portfolio__contact-information div p {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio__bio {
+        display: block;
+        text-align: center;
+    }
+
+    .portfolio__profile-picture {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

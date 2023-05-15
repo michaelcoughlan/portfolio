@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Michael Coughlan</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Michael Coughlan's portfolio" />
+
+        <!-- Favicon Setup -->
+        <link rel="apple-touch-icon" sizes="180x180" href="public/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon-16x16.png">
+        <link rel="manifest" href="public/favicon/site.webmanifest">
+        <link rel="mask-icon" href="public/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Load in the font from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Import our stylesheets -->
+        <link rel="stylesheet" href="styles/animations.css" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="stylesheet" href="styles/intro.css" />
+        <link rel="stylesheet" href="styles/project.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <span>MC</span>
+            <div class="underline"></div>
+        </nav>
+
+        <div class="portfolio__container">
+            <div class="portfolio__bio">
+                <img class="portfolio__profile-picture" src="public/assets/profile_picture.jpeg" alt="Photo of me" />
+
+                <div class="portfolio__bio-introduction">
+                    <h1>Hi, I'm Michael</h1>
+
+                    <p>I'm a full stack developer based in Amsterdam, The Netherlands.</p>
+                </div>
+            </div>
+
+            <div class="portfolio__contact-information">
+                <h2 class="portfolio__heading">CONTACT INFORMATION</h2>
+
+                <div>
+                    <p class="portfolio"><strong>Email:</strong> m.coughlan18@gmail.com</p>
+                    <p><strong>LinkedIn:</strong> <a class="highlight" href="https://www.linkedin.com/in/michael-coughlan-b9a01b59/" target="_blank">Michael Coughlan</a></p>
+                </div>
+            </div>
+
+            <div class="portfolio__section experience">
+                <h2 class="portfolio__heading">EXPERIENCE</h2>
+
+                <div class="portfolio__project">
+                    <h3>Fidelity International (CONTRACT) (13/12/2021 - 04/05/2023)</h3>
+                
+                    <p>
+                        In Fidelity, I was part of the frontend team modernising user journeys to retain existing clients and have the
+                        potential to bring in new ones also. We worked in two week sprints in which developers were fully responsible
+                        for bringing picking up tasks and ensuring they were deployed to production. This gave me some exposure to AWS,
+                        in particular Lambdas, monitoring, S3 buckets and their CI/CD pipelines.
+                    </p>
+
+                    <p>
+                        As well as the actual development in React, we were also in charge of reaching 100% coverage in our Jest unit tests
+                        and creating automation tests with Cucumber and Selenium.
+                    </p>
+
+                    <p>
+                        Any features which required communicating with the backend team would also need mocks to be created to simulate the
+                        API response until the backend API was ready, which was achieved with Wiremock. This would allow developers to transform
+                        the mocked data into the format the frontend required and prevent any delays in development.
+                    </p>
+                
+                    <ul class="portfolio__tech-list">
+                        <li class="portfolio__pill-button">React</li>
+                        <li class="portfolio__pill-button">TypeScript</li>
+                        <li class="portfolio__pill-button">Jest</li>
+                        <li class="portfolio__pill-button">Selenium & Cucumber</li>
+                        <li class="portfolio__pill-button">Node.js</li>
+                        <li class="portfolio__pill-button">AWS Lambdas</li>
+                        <li class="portfolio__pill-button">Swagger</li>
+                        <li class="portfolio__pill-button">Wiremock</li>
+                    </ul>
+                </div>
+                
+                <div class="portfolio__project">
+                    <h3>Ammeon, now Intive (CONTRACT) (10/05/2021 - 10/12/2021)</h3>
+                
+                    <p>
+                        In Ammeon, I worked as a fullstack developer implementing new features as well as bug fixing for a
+                        client's internal marketplace. The team was using Angular for the frontend with Protractor for
+                        automation testing.
+                    </p>
+
+                    <p>
+                        On the backend we used Node.js to communicate with Wordpress (which admins used to create guides and
+                        blogs for end users), MongoDB (for storing Gerrit commit statistics for gamification on the marketplace)
+                        and Elasticsearch (queried Wordpress to add search functionality to the frontend).
+                    </p>
+                
+                    <ul class="portfolio__tech-list">
+                        <li class="portfolio__pill-button">Angular</li>
+                        <li class="portfolio__pill-button">TypeScript</li>
+                        <li class="portfolio__pill-button">Node.js</li>
+                        <li class="portfolio__pill-button">MongoDB</li>
+                        <li class="portfolio__pill-button">Docker</li>
+                        <li class="portfolio__pill-button">Jenkins</li>
+                        <li class="portfolio__pill-button">Elastic Search</li>
+                        <li class="portfolio__pill-button">Wordpress</li>
+                    </ul>
+                </div>
+                
+                <div class="portfolio__project">
+                    <h3>Deloitte Digital (04/02/2019 - 07/05/2021)</h3>
+                
+                    <p>
+                        I was lucky enough during my time in Deloitte Digital to work on some really exciting greenfield
+                        projects in the immigration sector. The first of which involved creating a centralised location for
+                        immigration experts to input work permit requirements for supported countries and then a client facing
+                        online assessment which would use that data to determine if a candidate was eligible to work in the
+                        destination country.
+                    </p>
+                
+                    <p>
+                        The second was moving the Right to Work process into a web application to avoid needing to do it in person
+                        or via email. This involved working with 3rd party vendors to verify users matched their submitted documents
+                        (via Onfido) and externally storing them until the process was complete. Both applications used React in the
+                        frontend and Node.js in the backend. The development and production environments were achieved with Docker,
+                        Gitlab CI/CD and Google Cloud Platform.
+                    </p>
+                
+                    <p>
+                        Outside the immigration projects I worked on two Proof-of-Concepts which were purely frontend roles
+                        but I did get a chance to work with teams using Blockchain and AWS services.
+                    </p>
+                
+                    <ul class="portfolio__tech-list">
+                        <li class="portfolio__pill-button">React</li>
+                        <li class="portfolio__pill-button">JavaScript</li>
+                        <li class="portfolio__pill-button">Node.js</li>
+                        <li class="portfolio__pill-button">Nest.js</li>
+                        <li class="portfolio__pill-button">Laravel</li>
+                        <li class="portfolio__pill-button">MySQL</li>
+                        <li class="portfolio__pill-button">Docker</li>
+                        <li class="portfolio__pill-button">Gitlab CI/CD</li>
+                        <li class="portfolio__pill-button">Google Cloud Platform</li>
+                        <li class="portfolio__pill-button">Azure Active Directory</li>
+                        <li class="portfolio__pill-button">AWS Cognito</li>
+                        <li class="portfolio__pill-button">Onfido</li>
+                        <li class="portfolio__pill-button">Salesforce</li>
+                    </ul>
+                </div>
+                
+                <div class="portfolio__project">
+                    <h3>IBM (09/01/2017 - 01/02/2019)</h3>
+                    <p>
+                        I started IBM at the beginning of 2017 as a graduate and learned the basics for most of what I know today. I was
+                        part of some brilliant teams who mentored me (thank you in particular to <strong>Albert Hristov</strong>) and
+                        taught me topics such as frameworks, ORMs, CI/CD, cloud computing, scrum, how to communicate effectively with
+                        clients, etc.
+                    </p>
+                
+                    <p>
+                        I worked on a few different projects but primarily in the banking sector in which we developed a system for
+                        landlords, appraisers and the bank employees to view rental contract on properties. Besides that I was part
+                        of a team building a proof of concept to read emails and create ServiceNow tickets automatically based on
+                        keywords and also as a frontend developer for a well known retailer, developing features and bug fixing on
+                        their e-commerce site.
+                    </p>
+                
+                    <ul class="portfolio__tech-list">
+                        <li class="portfolio__pill-button">Angular</li>
+                        <li class="portfolio__pill-button">TypeScript</li>
+                        <li class="portfolio__pill-button">jQuery</li>
+                        <li class="portfolio__pill-button">Node.js</li>
+                        <li class="portfolio__pill-button">Loopback</li>
+                        <li class="portfolio__pill-button">C# / WPF</li>
+                        <li class="portfolio__pill-button">MySQL</li>
+                        <li class="portfolio__pill-button">Docker</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="portfolio__section projects">
+                <h2 class="portfolio__heading">PROJECTS</h2>
+
+                <div class="portfolio__project">
+                    <h3>This Website</h3>
+
+                    <p>
+                        I good place to start would be this website. I needed to have some form of online presence so this
+                        was the answer to that as well as giving me the opportunity to play around with Google Cloud for
+                        deploying, configuring Nginx and practicing CSS animations. It's really basic and doesn't leverage
+                        any frameworks, everything is built with plain old HTML and CSS. I wanted to try and avoid using
+                        JavaScript to see how far it could get me!
+                    </p>
+
+                    <ul class="portfolio__tech-list">
+                        <li class="portfolio__pill-button">HTML</li>
+                        <li class="portfolio__pill-button">CSS</li>
+                        <li class="portfolio__pill-button">Nginx</li>
+                        <li class="portfolio__pill-button">Google Cloud Platform</li>
+                    </ul>
+                </div>
+
+                <div class="portfolio__project">
+                    <h3>PromiseQu</h3>
+                
+                    <p>
+                        This is an npm package I built to execute an array of Promises in order. You add Promises to an
+                        array and when you start the process, it will iterate through the array, running each job and
+                        waiting for the Promise to resolve / reject before moving on to the next item in the queue.
+                    </p>
+
+                    <p>You can find the package <a class="highlight" href="https://www.npmjs.com/package/promise-qu" target="_blank">here</a>.</p>
+                
+                    <ul class="portfolio__tech-list">
+                        <li class="portfolio__pill-button">Node.js</li>
+                        <li class="portfolio__pill-button">npm</li>
+                    </ul>
+                </div>
+
+                <div class="portfolio__project">
+                    <h3>Squid Golf</h3>
+
+                    <p>
+                        My friends and I would often do rounds of Pitch and Putt so I took the opportunity to build an
+                        application for us to store our scores online, rather than wasting paper with a scorecard. It's
+                        built using Angular and Node.js, with Firebase handling the hosting and authentication.
+                    </p>
+
+                    <p>
+                        You can find it <a class="highlight" href="https://squidgolf-99537.web.app/" target="_blank">here</a>. Unfortunately after
+                        Heroku removed their free tier it is currently down although I am actively working on bringing it back online!
+                    </p>
+
+                    <ul class="portfolio__tech-list">
+                        <li class="portfolio__pill-button">Angular</li>
+                        <li class="portfolio__pill-button">TypeScript</li>
+                        <li class="portfolio__pill-button">Node.js</li>
+                        <li class="portfolio__pill-button">Firebase</li>
+                    </ul>
+                </div>
+
+                <div class="portfolio__project">
+                    <h3>Squid Pay</h3>
+
+                    <p>
+                        Squid Pay is an application built with Django and Stripe to enable small businesses to sell their
+                        products online. It provides an admin area to configure your product catalog and track customer
+                        orders.
+                    </p>
+                    <p>
+                        The user facing store makes use of Stripe's Checkout feature to execute payments securely
+                        via card or Apple / Google Pay.
+                    </p>
+
+                    <ul class="portfolio__tech-list">
+                        <li class="portfolio__pill-button">Django</li>
+                        <li class="portfolio__pill-button">Stripe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

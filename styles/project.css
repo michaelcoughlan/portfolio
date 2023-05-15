@@ -1,0 +1,83 @@
+.portfolio__section {
+    margin-top: 2rem;
+    opacity: 0;
+}
+
+.portfolio__section.experience,
+.portfolio__section.experience .portfolio__heading {
+    -webkit-animation: popIn 1s forwards;
+    animation: popIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.portfolio__section.projects,
+.portfolio__section.projects .portfolio__heading {
+    -webkit-animation: popIn 1s forwards;
+    animation: popIn 1s forwards;
+    animation-delay: 1.5s;
+}
+
+.portfolio__project {
+    margin: 2rem 0;
+    opacity: 0;
+    animation: popIn 1s forwards;
+}
+
+.portfolio__section.experience .portfolio__project:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.portfolio__section.experience .portfolio__project:nth-child(3) {
+    animation-delay: 0.75s;
+}
+
+.portfolio__section.experience .portfolio__project:nth-child(4) {
+    animation-delay: 1s;
+}
+
+.portfolio__section.experience .portfolio__project:nth-child(5) {
+    animation-delay: 1.25s;
+}
+
+.portfolio__section.projects .portfolio__project:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+.portfolio__section.projects .portfolio__project:nth-child(3) {
+    animation-delay: 1.75s;
+}
+
+.portfolio__section.projects .portfolio__project:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.portfolio__section.projects .portfolio__project:nth-child(5) {
+    animation-delay: 2.25s;
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio__container {
+        width: 90%;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+}
+
+.portfolio__tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    padding-left: 0;
+}
+
+.portfolio__pill-button {
+    background: #8b1e3f;
+    color: #ffffff;
+    padding: 0.313rem;
+    border-radius: 0.625rem;
+    margin: 0.188rem 0.625rem 0.188rem 0;
+}
+
