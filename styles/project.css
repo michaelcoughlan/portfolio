@@ -17,6 +17,10 @@
     animation-delay: 1.5s;
 }
 
+.portfolio__section.projects {
+    margin-bottom: 1rem;
+}
+
 .portfolio__project {
     margin: 2rem 0;
     opacity: 0;
